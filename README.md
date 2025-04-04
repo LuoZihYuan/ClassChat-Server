@@ -9,8 +9,7 @@ ClassChat is a real-time web-based chatroom designed to facilitate communication
 
 #### Build from source
 
-1. Install [pnpm](https://pnpm.io/installation) and [Git LFS](https://git-lfs.com/).
+1. Install [pnpm](https://pnpm.io/installation)
 2. Clone this repostiory to your local computer.
 3. Open your preferred terminal and `cd` into the repository.
-4. Run `git lfs pull` to pull all contents from remote.
-5. Build with `pnpm install;pnpm run build;`.
+4. Build with `pnpm install;pnpm run build;`.

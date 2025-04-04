@@ -53,7 +53,7 @@ io.on("connection", (socket) => {
         content: `${newUser.username} joined the chat.`,
       };
       io.emit("message.notification", newMessage);
-    }
+    },
   );
 
   socket.on(
@@ -67,7 +67,7 @@ io.on("connection", (socket) => {
       };
       callback(newTextMessage);
       socket.broadcast.emit("message.text", newTextMessage);
-    }
+    },
   );
 
   socket.on(
@@ -81,7 +81,7 @@ io.on("connection", (socket) => {
       };
       callback(newImageMessage);
       socket.broadcast.emit("message.image", newImageMessage);
-    }
+    },
   );
 
   socket.on("disconnect", () => {
